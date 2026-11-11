@@ -1,0 +1,6 @@
+.env
+*.db
+*.log
+user_data/
+customer_support_chat/data/
+.idea/
