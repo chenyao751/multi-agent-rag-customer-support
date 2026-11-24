@@ -38,5 +38,12 @@ class Config:
     AVIATION_MCP_API_KEY: str = environ.get("AVIATION_MCP_API_KEY", "")
     AVIATION_MCP_BASE_URL: str = environ.get("AVIATION_MCP_BASE_URL", "https://ai.variflight.com/servers/aviation/mcp")
 
+    # RollingGo Hotel MCP Settings
+    ROLLINGGO_MCP_API_KEY: str = environ.get("ROLLINGGO_MCP_API_KEY", "")
+    ROLLINGGO_MCP_BASE_URL: str = environ.get("ROLLINGGO_MCP_BASE_URL", "https://mcp.rollinggo.cn/mcp")
+
+    # 高德地图 Web 服务 API
+    AMAP_API_KEY: str = environ.get("AMAP_API_KEY", "")
+
 def get_settings():
     return Config()
